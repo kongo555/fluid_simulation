@@ -10,7 +10,7 @@ jobs:
   notify:
     runs-on: ubuntu-latest
     steps:
-        - uses: kongo555/issue-label-notification-action
+        - uses: kongo555/issue-label-notification-action@1.4
           with:
              token: ${{ secrets.GITHUB_TOKEN }}
              recipients: |
