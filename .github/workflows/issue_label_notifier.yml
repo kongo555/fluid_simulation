@@ -14,4 +14,4 @@ jobs:
           with:
              token: ${{ secrets.GITHUB_TOKEN }}
              recipients: |
-                   backend assign=@kongo555
+                   bug=@kongo555
