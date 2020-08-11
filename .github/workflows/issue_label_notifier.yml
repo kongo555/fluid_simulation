@@ -1,0 +1,17 @@
+name: Issue Label Notifier
+
+on:
+  issues:
+      types: [labeled]
+  pull_request:
+      types: [labeled]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+        - uses: jenschelkopf/issue-label-notification-action@1.2
+          with:
+             token: ${{ secrets.GITHUB_TOKEN }}
+             recipients: |
+                   backend assign=@kongo555
