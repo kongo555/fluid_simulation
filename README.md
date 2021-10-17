@@ -1,1 +1,3 @@
-TEST 2
+# Fluid simulation
+
+![preview](preview.gif)
